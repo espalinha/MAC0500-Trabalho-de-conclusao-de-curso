@@ -31,21 +31,50 @@
     <p>O texto acima foi retirado de um anteprojeto da Faculdade de Odontologia da USP, na qual o Professor Hirata está fazendo parte.</p>
     <p></p>
     <p>Esse projeto é uma colaboração entre o IME USP e a Odontologia</p>
-    <p></p>
-    <h1>Proposta do TCC</h1>
-    <p>Assim, a proposta desse TCC é investigar a viabilidade de utilizar radiografias panorâmicas na criação de modelos 3D de arcos dentários, considerando aspectos técnicos, éticos e legais.</p>
-    
+    <p></p>   
     <p>
         <a href="anteprojeto_de_pesquisa.docx" download="./anteprojeto_de_pesquisa.docx">
             <button type="button">Baixar Anteprojeto de Pesquisa</button>
         </a>
     </p>
+    
+    <h1>Proposta</h1>
+    <p> Avaliar a viabilidade de utilização de radiografias panorâmicas como fonte primária para reconhecimento biométrico e reconstrução morfológica digital, voltada à produção preliminar de modelos tridimensionais e dispositivos odontológicos em fluxos de diferentes formatos. </p>
+    <ol>
+      <li>Padronizar um conjunto de landmarks dentários e ósseos relevantes para identificação biométrica e reconstrução digital.</li> 
+        <li>Desenvolver e treinar algoritmos baseados em redes neurais profundas para detecção automática desses landmarks.</li>
+        <li>Avaliar o grau de individualização dos padrões dentários presentes em radiografias panorâmicas.</li>
+        <li>Extrair contornos dentários e curvas dos arcos, aplicando métodos avançados de segmentação.</li> 
+        <li>Treinar uma rede neural profunda para a extração da arcada dentária superior e inferior da imagem.</li>
+        <li>Aperfeiçoar o modelo responsável pela inferência do modelo 3D da arcada.</li>
+        <li>Gerar modelos digitais preliminares e exportá-los para formatos compatíveis com diferentes fluxos (PLY e STL).</li>
+        <li>Validar medidas e proporções obtidas a partir das panorâmicas utilizando modelos tridimensionais reais provenientes de escaneamento intraoral.</li>
+        <li>Identificar e quantificar fontes de erro associadas à distorção panorâmica e ao posicionamento do paciente.</li>
+        <li>Examinar implicações éticas e legais, com ênfase em riscos de reidentificação e exigências de proteção de dados sensíveis.</li>
+    </ol>
 
-    <h1>Agenda</h1>
-    <ul>
-        <li>Dia 15/04/2026: Encontro com o Professor Moacyr Domingos Novelli</li>
-        <li>Dia 19/04/2026: Dados que serão usados no treinamento já disponíveis na base de dados /scratch/espala/odontologia_3d</li>
-    </ul>
+    <h1>Metodologia</h1>
+    <ol>
+      <li>Coleta e organização dos dados, com padronização de resolução, formato, rotulação de imagens e anonimização.</li>
+      <li>Anotação manual especializada dos landmarks dentários e ósseos para criação do conjunto de treinamento.</li>
+      <li>Treinamento de redes neurais convolucionais para detecção automática de landmarks e extração de estruturas relevantes.</li>
+      <li>Implementação e refinamento dos modelos na segmentação dentária.</li>
+      <li>Treinamento e refinamento de rede neural para separação da arcada dentária superior e inferior.</li>
+      <li>Segmentação dos contornos dentários e obtenção de curvas dos arcos por meio de técnicas de visão computacional.</li>
+      <li>Reconstrução preliminar de modelos digitais destinados a fluxos de diferentes formatos.</li>
+      <li>Fine-tuning do modelo de geração de modelos 3D para otimizar a construção do objeto em 3D.</li>
+      <li>Validação quantitativa mediante comparação com modelos 3D reais:</li>
+              <ul>
+                <li>métricas de erro absoluto e relativo;</li> 
+                <li>análise de regressão;</li>
+                <li>RMSE;</li> 
+                <li>o métodos de Bland–Altman.</li>
+              </ul>
+      <li>Análise ética, considerando classificação da radiografia como dado sensível, potencial biométrico, riscos de reidentificação e implicações para políticas institucionais de proteção de dados.</li>
+
+    </ol>
+
+    
 </body>
 
 </html>
